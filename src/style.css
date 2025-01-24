@@ -1,0 +1,116 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);  /* Gradient background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;  /* White color for text */
+  }
+  
+  /* App container styles */
+  .app-container {
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.1);  /* Transparent white */
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Weather heading */
+  .weather-heading {
+    font-size: 2.5rem;
+    color: #fff;  /* White color for heading */
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Search input and button styling */
+  .search-container {
+    margin-bottom: 40px;
+  }
+  
+  .search-container input {
+    padding: 12px;
+    width: 270px;
+    margin-right: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: rgba(255, 255, 255, 0.7); /* Light background for input */
+  }
+  
+  .search-container input:focus {
+    outline: none;
+    border-color: #2575fc;
+  }
+  
+  .search-container button {
+    padding: 12px;
+    background-color: #2575fc;  /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-container button:hover {
+    background-color: #6a11cb;  /* Purple hover effect */
+  }
+  
+  /* Weather information styling */
+  .weather-info {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background for weather info */
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-info h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  
+  .weather-info p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+  
+  .weather-info p:first-of-type {
+    font-weight: bold;
+  }
+  
+  .weather-info p:last-of-type {
+    font-weight: lighter;
+  }
+  
+  /* Adding animations to the weather info */
+  .weather-info {
+    opacity: 0;
+    transform: translateY(50px);
+    animation: fadeInUp 0.5s forwards;
+  }
+  
+  @keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
